@@ -47,12 +47,14 @@
       </b-navbar>
     </div>
 
+    <Count />
+
     <Form />
 
     <div class="container">
       <b-row>
         <b-col md="auto">
-          <b-calendar v-model="value" @context="onContext" locale="en-US"></b-calendar>
+          <b-calendar  locale="en-US"></b-calendar>
         </b-col>
       </b-row>
     </div>
@@ -64,6 +66,7 @@
   import Vue from 'vue';
   import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
   import Form from './components/Form.vue'
+  import Count from './components/Count'
   import './styles/app.scss'
 
   Vue.use(BootstrapVue);
@@ -72,7 +75,8 @@
   export default {
     name: 'App',
     components: {
-      Form
+      Form,
+      Count
     }
   }
 
