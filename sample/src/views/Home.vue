@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <HelloWorld />
   </div>
 </template>
 
@@ -16,3 +16,12 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.home {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+</style>
