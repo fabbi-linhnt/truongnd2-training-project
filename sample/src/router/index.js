@@ -24,6 +24,24 @@ const routes = [
     name: 'Contact',
     component: () =>
         import ("../views/Contact.vue")
+  },
+  {
+    path: '/dash',
+    name: "Dashboard",
+    component: () =>
+        import ("../views/Dashboard")
+  },
+  {
+    path: '/posts',
+    name: "Post",
+    component: () =>
+        import ("../views/Post")
+  },
+  {
+    path: '*',
+    name: "NotFound",
+    component: () =>
+        import ("../views/NotFound")
   }
 ];
 

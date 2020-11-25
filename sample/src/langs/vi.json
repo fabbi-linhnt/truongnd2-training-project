@@ -1,3 +1,11 @@
 {
-  "welcomeMsg": "Chào mừng đến với ứng dụng Vuejs của bạn"
+  "homePage": "Trang chủ",
+  "aboutPage": "Về chúng tôi",
+  "contactPage": "Liên hệ",
+  "Dashboard": "Quản trị",
+  "post": "Bài viết",
+  "listPost" : "Danh sách bài viết",
+  "welcomeMsg": "Chào mừng đến với ứng dụng Vuejs của bạn",
+  "notFound": "Đường dẫn không tồn tại.",
+  "welcomeDash": "Chào mừng tới trang quản trị."
 }
