@@ -20,11 +20,8 @@
     name: 'App',
     components: {
       Header
-    }
+    },
   }
 
 </script>
 
-<style lang="scss">
-
-</style>
