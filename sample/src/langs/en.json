@@ -1,3 +1,11 @@
 {
-  "welcomeMsg": "Welcome to your Vuejs App"
+  "homePage": "Home",
+  "aboutPage": "About",
+  "contactPage": "Contact",
+  "Dashboard": "Dashboard",
+  "post": "Posts",
+  "listPost" : "List of Post",
+  "welcomeMsg": "Welcome to your Vuejs App",
+  "notFound": "404 Page not found",
+  "welcomeDash": "Welcome to Dashboard"
 }

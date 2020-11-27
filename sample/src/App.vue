@@ -1,30 +1,27 @@
 <template>
-
-  <div id="app" class="container">
-    <Header />
-    <router-view />
+  <div id="app" class="container"
+       v-bind:class="{active : this.$store.state.auth }">
+    <Header/>
+    <router-view/>
   </div>
 </template>
 
 <script>
-  import Vue from 'vue';
-  import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
-  import Header from "@/layout/Header";
+import Header from "@/layout/Header";
+import './styles/app.scss'
 
-  import './styles/app.scss'
-
-  Vue.use(BootstrapVue);
-  Vue.use(IconsPlugin);
-
-  export default {
-    name: 'App',
-    components: {
-      Header
-    }
+export default {
+  name: 'App',
+  components: {
+    Header
   }
-
+}
 </script>
 
-<style lang="scss">
-
+<style lang="scss" scoped>
+#app {
+  &.active {
+    background-color: #ecf0f1;
+  }
+}
 </style>

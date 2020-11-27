@@ -6,11 +6,6 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
-  data() {
-    return {
-      languageArray: ['en', 'vi']
-    }
-  }
+  name: 'HelloWorld'
 };
 </script>

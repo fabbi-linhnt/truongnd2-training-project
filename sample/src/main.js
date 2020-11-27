@@ -3,12 +3,23 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import i18n from './plugins/i18n'
-import FlagIcon from 'vue-flag-icon'
+import  './vee-validate'
+import { BootstrapVue } from 'bootstrap-vue';
+import NProgress from 'vue-nprogress'
 
-Vue.use(FlagIcon)
+Vue.use(BootstrapVue);
+Vue.use(NProgress)
 Vue.config.productionTip = false;
+const nprogress = new NProgress()
+const options = {
+  latencyThreshold: 200, // Number of ms before progressbar starts showing, default: 100,
+  router: true, // Show progressbar when navigating routes, default: true
+  http: false // Show progressbar when doing Vue.http, default: true
+};
+Vue.use(NProgress, options)
 
 new Vue({
+  nprogress,
   router,
   store,
   i18n,
