@@ -41,7 +41,7 @@ const routes = [
     path: '*',
     name: "NotFound",
     component: () =>
-        import ("../views/NotFound")
+        import ("../views/NotFound"),
   }
 ];
 
