@@ -23,6 +23,7 @@ export default {
   },
   created() {
     this.checkAuth()
-  }
+  },
+
 }
 </script>

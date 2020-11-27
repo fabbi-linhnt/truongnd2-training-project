@@ -11,6 +11,13 @@ export default new Vuex.Store({
         account: {
             user: '',
             pass: ''
+        },
+
+        formDefault : {
+            email: '',
+            name: '',
+            food: null,
+            checked: []
         }
     },
     getters: {

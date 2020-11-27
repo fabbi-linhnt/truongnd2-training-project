@@ -79,6 +79,6 @@ export default {
         localStorage.setItem('account', JSON.stringify(this.account))
       }
     },
-  }
+  },
 }
 </script>

@@ -50,6 +50,12 @@ export default {
   methods: {
     changeLanguage(){
       i18n.locale = this.selected
+      this.$bvToast.toast('Change language is success', {
+        title: 'Successfully',
+        autoHideDelay: 5000,
+        appendToast: true,
+        variant: 'success'
+      })
     },
     logoutAdmin(){
       this.$store.dispatch('logout')
